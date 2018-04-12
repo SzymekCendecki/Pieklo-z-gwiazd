@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8" />
+<script type="text/javascript" src="../js/silnikgry.js" charset="utf-8"></script>
+<link rel="stylesheet" href="../css/style.css" />
+<title>PIEKŁO Z GWIAZD</title>
+</head>
+<body onload="startsurowców()" onkeypress = "help()">
+
+<!-- div góra zawiera liczniki surowców, divy z ilością i rodzajem dostępnej broni -->
+<div id = "góra">
+
+<!-- div z surowcami -->
+<div id = "surowce">ZASOBY<br />
+<div id = "materiały">materiały</div><div id = "licznikmateriałów"></div><br />
+<div id = "energia">energia</div><div id = "licznikenergii"></div><br />
+<div id = "pracownicy">pracownicy</div><div id = "licznikpracowników"></div>
+</div>
+
+<!-- div z ilością i rozdzajem broni -->
+<div id = "armia">ARMIA<br />
+<div id = "piechota">piechota</div><div id = "licznikpiechoty">1</div><br />
+<div id = "czołgi">czołgi</div><div id = "licznikczołgów">1</div><br />
+<div id = "artyleria">artyleria</div><div id = "licznikartylerii">1</div><br />
+<div id = "samoloty">samoloty</div><div id = "liczniksamolotów">1</div>
+</div>
+
+<!-- div z przyciskami zakupów piechoty, czołgow, artylerii i samolotów -->
+<div id = "przyciskizakupów">
+<button id="zakuppiechota" onclick="buypiechota()">kup</button>
+<button id="sellpiechota" onclick="sellpiechota()">sprzedaj</button>
+<button id="zakupczołgi" onclick="buyczołg()">kup</button>
+<button id="sellczołg" onclick="sellczołg()">sprzedaj</button>
+<button id="zakupartyleria" onclick="buyartyleria()">kup</button>
+<button id="sellartyleria" onclick="sellartyleria()">sprzedaj</button>
+<button id="zakupsamoloty" onclick="buysamolot()">kup</button>
+<button id="sellsamolot" onclick="sellsamolot()">sprzedaj</button>
+</div>
+
+<!-- div z ilością i rodzajem obrony -->
+<div id = "obrona">OBRONA<br />
+<div id = "zasiekiokopy">zasieki/okopy</div><div id = "licznikzasiekówokopów">1</div><br/>
+<div id = "bunkry">bunkry</div><div id = "licznikbunkrów">1</div><br />
+<div id = "radary">radary</div><div id = "licznikradarów">1</div>
+</div>
+
+<!-- div z przyciskami zakupów zasieków i okopów, bunkrów, radarów -->
+<div id = "przyciskizakupów">
+<button id="zakupzasiekiokopy" onclick="buyzasiekiokopy()">kup</button>
+<button id="sellzasiekiokopy" onclick="sellzasiekiokopy()">sprzedaj</button>
+<button id="zakupbunkry" onclick="buybunkry()">kup</button>
+<button id="sellbunkry" onclick="sellbunkry()">sprzedaj</button>
+<button id="zakupradary" onclick="buyradary()">kup</button>
+<button id="sellradary" onclick="sellradary()">sprzedaj</button>
+</div>
+
+<!-- div z rzeczami do rozbudowy-->
+<div id = "rozbudowa"><br />
+<div id = "miasta">miasta</div><div id = "licznikmiast">1</div><br />
+<div id = "fabryki">fabryki</div><div id = "licznikfabryk">1</div><br />
+<div id = "elektrownie">elektrownie</div><div id="licznikelektrowni">1</div>
+</div>
+
+<!-- div z przyciskami do rozbudowy miast-->
+<div id = "przyciskizakupów">
+<button id="rozbudowamiast" onclick="buymiasto()">rozbudowa</button>
+<button id="sellmiasto" onclick="sellmiasto()">sprzedaj</button>
+<button id="rozbudowafabryk" onclick="buyfabryka()">rozbudowa</button>
+<button id="sellfabryka" onclick="sellfabryka()">sprzedaj</button>
+<button id="rozbudowaelektrowni" onclick="buyelektrownia()">rozbudowa</button>
+<button id="sellelektrownia" onclick="sellelektrownia()">sprzedaj</button>
+</div>
+
+<!-- div z cenami -->
+<div id = "cennik"><b>CENNIK</b><br />
+<b>piechota</b> - materiały <b>15</b>, energia <b>15</b>, pracownicy <b>15</b><br />
+<b>czołg</b> - materiały <b>100</b>, energia <b>100</b>, pracownicy <b>100</b><br />
+<b>artyleria</b> - materiały <b>75</b>, energia <b>75</b>, pracownicy <b>50</b><br />
+<b>samolot</b> - materiały <b>120</b>, energia <b>100</b>, pracownicy <b>90</b><br />
+<b>zasieki/okopy</b> - materiały <b>55</b>, energia <b>55</b>, pracownicy <b>50</b><br />
+<b>bunkry</b> - materiały <b>200</b>, energia <b>200</b>, pracownicy <b>200</b><br /> 
+<b>radary</b> - materiały <b>125</b>, energia <b>125</b>, pracownicy <b>100</b><br />
+<b>miasto</b> - materiały <b>250</b>, energia <b>200</b>, pracownicy <b>150</b><br />
+<b>fabryka</b> - materiały <b>175</b>, energia <b>175</b>, pracownicy <b>125</b><br />
+<b>elektrownia</b> - materiały <b>150</b>, energia <b>200</b>, pracownicy <b>150</b>
+</div>
+</div>
+
+<!-- div wydarzeń gry -->
+<div id = "środek"></div>
+
+</body>
+</html>

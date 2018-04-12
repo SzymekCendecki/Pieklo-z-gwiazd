@@ -1,0 +1,121 @@
+#góra{
+	width: 1330px;
+	height: 230px;
+	background: lightgreen;
+	margin-left: 10px;
+}
+
+#środek{
+	width: 1330px;
+	height: 415px;
+	margin-top: 5px;
+	background: lightblue;
+	margin-left: 10px;
+	}
+	
+#surowce, #armia, #obrona, #przyciskizakupów{
+	width: 100px;
+	height: 220px;
+	font-weight: bold;
+	margin: 3px;
+	float: left;
+}
+
+#materiały, #energia, #pracownicy, #piechota, #czołgi, #artyleria, #samoloty, #bunkry, #radary, #fabryki, #miasta{
+	font-weight: normal;
+	margin-left: 20px;
+}
+
+
+#zakuppiechota, #zakupczołgi, #zakupartyleria, #zakupsamoloty, #zakupzasiekiokopy, #zakupbunkry, #zakupradary{
+	margin-top: 13px;
+	margin-left: 30px;	
+	background: green;
+	border: solid green 2px;
+	border-radius: 10px;
+	color: yellow;
+}
+
+#zasiekiokopy, #elektrownie{
+	font-weight: normal;
+	margin-top: 5px;
+	margin-left: 6px;
+}
+
+#licznikmateriałów, #licznikenergii, #licznikpracowników, #licznikpiechoty, #licznikczołgów, #licznikartylerii, #liczniksamolotów, #licznikzasiekówokopów, 
+#licznikbunkrów, #licznikradarów, #licznikmiast, #licznikfabryk, #licznikelektrowni{
+	margin-left: 35px;
+}
+#rozbudowa{
+	width: 100px;
+	height: 220px;
+	margin: 3px;
+	float: left;
+}
+
+#rozbudowamiast, #rozbudowaelektrowni, #rozbudowafabryk{
+	margin-left: 10px;
+	margin-top: 21px;
+	background: green;
+	border: solid green 2px;
+	border-radius: 10px;
+	color: yellow;
+}
+
+#cennik{
+	width: 570px;
+	height: 220px;
+	float: left;
+	margin-top: 3px;
+}
+
+#sellpiechota, #sellczołg, #sellartyleria, #sellsamolot, #sellzasiekiokopy, #sellbunkry, #sellradary{
+	margin-left: 15px;
+	background: red;
+	border: solid red 2px;
+	border-radius: 10px;
+	color: yellow;
+}
+
+#sellmiasto, #sellfabryka, #sellelektrownia{
+	margin-left: 18px;
+	background: red;
+	border: solid red 2px;
+	border-radius: 10px;
+	color: yellow;
+}
+
+#dalej{
+	background: blue;
+	border: solid blue 2px;
+	border-radius: 10px;
+	color: white;
+}
+
+#tak{
+	background: green;
+	border: solid green 2px;
+	border-radius: 10px;
+	color: white;
+}
+
+#nie{
+	background: red;
+	border: solid red 2px;
+	border-radius: 10px;	
+	color: white;
+}
+
+#wartość, #wartość2, #wartość3, #wartość4, #wartość5, #wartość6{
+border-radius: 25px;
+text-align: center;
+width: 75px;
+border: solid green 2px;
+background: yellow;
+}
+
+#zamianamateriały, #zamianapracowników, #z{
+width: 250px;
+height: 175px;
+float: left;
+}

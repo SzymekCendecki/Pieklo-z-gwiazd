@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang = "pl">
+<head>
+<meta charset="UTF-8" >
+<meta http-equiv="refresh" content="13; URL=podstrony/prezentują.html">
+
+<title>PIEKŁO Z GWIAZD</title>
+
+<script>
+function N(){
+document.getElementById('N').innerHTML = "N";
+setInterval("I()", 750);
+}
+
+function I(){
+document.getElementById('I').innerHTML = "I";
+setInterval("E()", 750);
+}
+
+function E(){
+document.getElementById('E').innerHTML = "E";
+setInterval("W()", 750);
+}
+
+function W(){
+document.getElementById('W').innerHTML = "W";
+setInterval("II()", 750);
+}
+
+function II(){
+document.getElementById('II').innerHTML = "I";
+setInterval("EE()", 750);
+}
+
+function EE(){
+document.getElementById('EE').innerHTML = "E";
+setInterval("R()", 750);
+}
+
+function R(){
+document.getElementById('R').innerHTML = "R";
+setInterval("NN()", 750);
+}
+
+function NN(){
+document.getElementById('NN').innerHTML = "N";
+setInterval("EEE()", 750);
+}
+
+function EEE(){
+document.getElementById('EEE').innerHTML = "E";
+setInterval("P()", 750);
+}
+
+function P(){
+document.getElementById('P').innerHTML = "P";
+setInterval("S()", 750);
+}
+
+function S(){
+document.getElementById('S').innerHTML = "S";
+setInterval("Y()", 750);
+}
+
+function Y(){
+document.getElementById('Y').innerHTML = "Y";
+}
+</script>
+
+<style>
+#niewierne{
+width: 1000px;
+height: 150px;
+color: blue;
+font-size: 75px;
+font-weight: bold;
+float: left;
+margin-left: 325px;
+margin-top: 150px;
+}
+
+#psy{
+width: 250px;
+height: 100px;
+color: blue;
+font-size: 75px;
+font-weight: bold;
+margin-left: 500px;
+}
+
+#N, #I, #E, #W, #II, #EE, #R, #NN, #EEE, #P, #S, #Y{
+margin-top: 40px;
+margin-left: 15px;
+float: left;
+}
+
+#prawawłasności{
+margin-top: 450px;
+text-align: center;
+font-weight: bold;
+}
+
+</style>
+
+</head>
+<body onload = "N()">
+
+<div id = "niewierne">
+<div id="N"></div>
+<div id="I"></div>
+<div id="E"></div>
+<div id="W"></div>
+<div id="II"></div>
+<div id="EE"></div>
+<div id="R"></div>
+<div id="NN"></div>
+<div id="EEE"></div>
+</div>
+
+<br /><br /><br />
+
+<div id="psy">
+<div id="P"></div>
+<div id="S"></div>
+<div id="Y"></div>
+</div>
+
+<div id = "prawawłasności">niniejsza gra stworzona została prze Niewierne Psy i jest chroniona prawami autorskimi</div>
+
+</body>
+</html>

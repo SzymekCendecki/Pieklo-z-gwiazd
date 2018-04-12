@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang = "pl">
+<head>
+<meta charset="UTF-8" >
+<meta http-equiv="refresh" content="13; URL=piekło.html">
+
+<title>PIEKŁO Z GWIAZD</title>
+
+<script>
+function p(){
+document.getElementById('p').innerHTML = "p";
+setInterval("r()", 750);
+}
+
+function r(){
+document.getElementById('r').innerHTML = "r";
+setInterval("e()", 750);
+}
+
+function e(){
+document.getElementById('e').innerHTML = "e";
+setInterval("z()", 750);
+}
+
+function z(){
+document.getElementById('z').innerHTML = "z";
+setInterval("ee()", 750);
+}
+
+function ee(){
+document.getElementById('ee').innerHTML = "e";
+setInterval("n()", 750);
+}
+
+function n(){
+document.getElementById('n').innerHTML = "n";
+setInterval("t()", 750);
+}
+
+function t(){
+document.getElementById('t').innerHTML = "t";
+setInterval("u()", 750);
+}
+
+function u(){
+document.getElementById('u').innerHTML = "u";
+setInterval("j()", 750);
+}
+
+function j(){
+document.getElementById('j').innerHTML = "j";
+setInterval("ą()", 750);
+}
+
+function ą(){
+document.getElementById('ą').innerHTML = "ą";
+}
+</script>
+
+<style>
+#p, #r, #e, #z, #ee, #n, #t, #u, #j, #ą{
+margin-top: 40px;
+margin-left: 15px;
+float: left;
+}
+
+#prezentują{
+width: 1000px;
+height: 150px;
+color: green;
+font-size: 45px;
+font-weight: bold;
+float: left;
+margin-top: 225px;
+margin-left: 425px;
+}
+</style>
+
+</head>
+<body onload = "p()">
+
+<div id="prezentują">
+<div id="p"></div>
+<div id="r"></div>
+<div id="e"></div>
+<div id="z"></div>
+<div id="ee"></div>
+<div id="n"></div>
+<div id="t"></div>
+<div id="u"></div>
+<div id="j"></div>
+<div id="ą"></div>
+</div>
+
+</body>
+</html>

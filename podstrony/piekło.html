@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang = "pl">
+<head>
+<title>PIEKŁO Z GWIAZD</title>
+<meta charset="UTF-8" />
+<meta http-equiv="refresh" content="13; URL=gra.html">
+
+<style>
+#piekło, #gwiazd{
+color: red;
+font-size: 75px;
+font-weight: bold;
+float: left;
+}
+
+#piekło, #gwiazd{
+width: 1000px;
+height: 100px;
+}
+
+#Z{
+width: 100px;
+height: 50px;
+margin-top: 200px;
+margin-left: 620px;
+color: red;
+font-size: 75px;
+font-weight: bold;
+}
+
+#piekło{
+margin-top: 75px;
+margin-left: 475px;
+}
+
+#gwiazd{
+margin-left: 460px;
+}
+
+#P, #I, #E, #K, #Ł, #O, #G, #W, #II, #A, #ZZ, #D{
+margin-top: 40px;
+margin-left: 15px;
+float: left;
+}
+
+
+#G, #W, #II, #A, #ZZ, #D{
+margin-top: 15px;
+margin-left: 15px;
+float: left;
+ }
+</style>
+
+<script type="text/javascript">
+
+function P(){
+document.getElementById('P').innerHTML = "P";
+setInterval("I()", 750);
+}
+
+function I(){
+document.getElementById('I').innerHTML = "I";
+setInterval("E()", 750);
+}
+
+function E(){
+document.getElementById('E').innerHTML = "E";
+setInterval("K()", 750);
+}
+
+function K(){
+document.getElementById('K').innerHTML = "K";
+setInterval("Ł()", 750);
+}
+
+function Ł(){
+document.getElementById('Ł').innerHTML = "Ł";
+setInterval("O()", 750);
+}
+
+function O(){
+document.getElementById('O').innerHTML = "O";
+setInterval("Z()", 750);
+}
+
+function Z(){
+document.getElementById('Z').innerHTML = "Z";
+setInterval("G()", 750);
+}
+
+function G(){
+document.getElementById('G').innerHTML = "G";
+setInterval("W()", 750);
+}
+
+function W(){
+document.getElementById('W').innerHTML = "W";
+setInterval("II()", 750);
+}
+
+function II(){
+document.getElementById('II').innerHTML = "I";
+setInterval("A()", 750);
+}
+
+function A(){
+document.getElementById('A').innerHTML = "A";
+setInterval("ZZ()", 750);
+}
+
+function ZZ(){
+document.getElementById('ZZ').innerHTML = "Z";
+setInterval("D()", 750);
+}
+
+function D(){
+document.getElementById('D').innerHTML = "D";
+}
+
+</script>
+</head>
+
+<body onload = "P()">
+
+<div id = "piekło">
+<div id="P"></div>
+<div id="I"></div>
+<div id="E"></div>
+<div id="K"></div>
+<div id="Ł"></div>
+<div id="O"></div>
+</div>
+
+<br /><br /><br />
+
+<div id="Z"></div>
+
+<br /><br /><br />
+
+<div id = "gwiazd">
+<div id="G"></div>
+<div id="W"></div>
+<div id="II"></div>
+<div id="A"></div>
+<div id="ZZ"></div>
+<div id="D"></div>
+</div>
+
+</body>
+</html>
